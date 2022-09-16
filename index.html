@@ -1,35 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!---->
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TiendaWeb</title>
 </head>
 <body>
-    <!--
-    <head>logo y menu</head>
+
+<div class="container">
     <main>
-        <h1>Bienvenidos a TiendaWeb Olimpo.tech</h1>
-        <h2>para poder navegar en nuetra web, debe registrarse y recibira un cupon de descuento</h2>
-        <img src="" alt="olimpo">
+        <header>
+            <div id="divHeader">
+                <img src="" alt="logo">
+                <nav class="nav">
+                    <p> nav</p>
+                    <ul id="listServices">
+                        <li class="liClass"></li>
+        
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+        <h1 id="color">WE DESIGN 
+            YOUR PROFESSIONAL WEBSITE </h1>
+        <H2>Te diseñaremos un sitio web que refleje la esencia de tu marca, por lo que llevaremos a cada visitante a realizar una compra o registro. Indiscutiblemente, un sitio web es una herramienta indispensable para cualquier negocio.</H2>
+        <img src="" alt="imagen de la empresa">
+        <h3>Lo invitamos a Registrarse, recibira un cupon de descuento!!</h3>
+       
+    
+        <section>
+            <article>
+                <form action="" target="_blank">
+                    <fieldset style="background: #f6f8ff; border: 2px solid #4238ca;">
+                      <legend>Contact information</legend>
+                  
+                      <input type="text" name="firstname" id="nombres"placeholder="ingrese su nombre"><br /><br />
+                      <input type="text" name="lastname"id="apellidos" placeholder="ingrese su apellido"><br /><br />
+                      <input type="text" name="email" id="mail" placeholder="ingrese su Email"><br /><br />
+                      <input type="text" name="dni" id="dnis"placeholder="ingrese su dni"><br /><br />
+                      <input type="text" name="adress" id="dir" placeholder="ingrese su direccion"><br /><br />
+                      <p>estoy de acuerdo con <a href="#">terminos y condiciones</a></p><br /><br />
+                      <!--<button type="submit">Submit</button><br /><br />-->
+                      <input type="button" value="registrarse" id ="btnRegistrarse" onclick="campoRequerido()">
+                  
+                      
+                    </fieldset>
+                  </form>
+
+            </article>
+
+            <article>
+                <p>Nos enfocamos en que tu web venda, mejoramos la experiencia de usuario en tu página web</p>
+                <input type="button" value="registrar una reunion gratis" id ="btnRegistrarReunion" >
+
+            </article>
+        </section>
+        
+        
+
+
+
+
     </main>
-   
-    <section>
-        <form class="formRegister" action=" " target="_blank">
-            <input type="text" name="nombres" id="nombres" placeholder="ingrese su nombre">
-            <input type="text" name="apellidos" id="apellidos" placeholder="ingrese su apellido">
-            <input type="text" name="dni" id="dnis" placeholder="ingrese su dni">
-            <input type="text" name="mail" id="mail" placeholder="ingrese su mail">
-            <input type="text" name="direccion" id="dir" placeholder="ingrese su direccion">
-            <p>estoy de acurso con <a href="#">terminos y condiciones</a></p>
-            <input type="submit" value="registrase" id="">
-        </form>  
-    </section>-->
+
+</div>
 
 
+    <!--<script>
+        function cambiarColor() {
+            document.getElementById("btnRegistrarse").style.color = "red";
+        }
 
+        function campoRequerido() {
+            if(document.getElementById('nombres').value.length == 0){
+            window.alert("El campo nombres es requerido");
+            return;
+        }
+
+        if(document.getElementById('apellidos').value.length == 0){
+            window.alert("El campo apellido es requerido");
+            return;
+        }
+
+        window.alert("Registro Generado");
+        }
+    </script>-->
 
 
     

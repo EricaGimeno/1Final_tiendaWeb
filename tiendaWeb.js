@@ -156,6 +156,7 @@ let option;
 /*AQUI empieza el programa */
 
 while(option!==0){
+    alert("Bienvenidos a Olimpo.tech!, lo invitamos a registrase asi, podra acceder a nuestra tienda WEb!, Recibira de regalo un cupon de descuento !! ");
     option=Number(prompt("ingrese una de las siguientes opciones:\n 1. Registrar Cliente: \n 2. Tienda Web\n 0. Salir\n"));
     let numberDocument;
     switch(option){
@@ -272,3 +273,38 @@ while(option!==0){
         break;
     }
 }
+
+/*elememto donde voy a incorporar los li desde js*/
+const listServices=document.getElementById("listServices");
+/*creamos los <li>*/
+const li1= document.createElement("li");
+/*agrego texto al <li>*/
+li1.textContent="landing page";
+listServices.appendChild(li1);
+
+
+/*creamos los <li>*/
+const li2= document.createElement("li");
+/*agrego texto al <li>*/
+li2.textContent="Ecomercce";
+listServices.appendChild(li2);
+
+function cambiarColor() {
+    document.getElementById("btnRegistrarse").style.color = "red";
+}
+
+function campoRequerido() {
+    if(document.getElementById('nombres').value.length == 0){
+    window.alert("El campo nombres es requerido");
+    return;
+}
+
+if(document.getElementById('apellidos').value.length == 0){
+    window.alert("El campo apellido es requerido");
+    return;
+}
+
+window.alert("Registro Generado");
+}
+document.getElementById("color").style.color = "red";
+
